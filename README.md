@@ -10,10 +10,39 @@
 
 ## 🎯 Project Overview
 
-This project demonstrates a multi-source ETL (Extract, Transform, Load) pipeline that integrates data from various external sources into a centralized relational database.
+This project demonstrates a **multi-source ETL (Extract, Transform, Load) pipeline** that integrates data from multiple external sources into a centralized relational database.
 
-The pipeline collects data from cities, population statistics, weather APIs, airport information, and flight data, then processes and loads it into a MySQL database. The goal is to build a structured and connected dataset that can be used for analysis and reporting.
+The pipeline collects data related to **cities, population, weather, airports, and flights**, processes and transforms it using Python, and loads it into a structured MySQL database for analysis.
 
+The goal is to simulate a **real-world data engineering workflow** that converts scattered data sources into a unified, query-ready system for analytics.
+
+---
+
+## 🧠 Problem Statement
+
+In real-world systems, data is distributed across multiple APIs and datasets.
+
+This project solves the problem:
+
+> How can we integrate multiple heterogeneous data sources into a single structured database for analysis and decision-making?
+
+---
+
+## ⚙️ ETL Pipeline Architecture
+
+```
+External Data APIs / Datasets
+        ↓
+Python (ETL Extraction)
+        ↓
+Data Cleaning & Transformation (Pandas)
+        ↓
+Relational Mapping (Foreign Keys)
+        ↓
+MySQL Database
+        ↓
+Analytics / Reporting Ready Data
+```
 ---
 
 ## 📊 Data Sources
@@ -80,12 +109,12 @@ This pipeline integrates multiple datasets to build a unified city-level databas
 
 ## 🚀 Key Features
 
-- Extracts data from multiple sources (APIs and datasets)
-- Performs data cleaning and transformation using Python
-- Builds relational mappings between entities
-- Loads structured data into a MySQL database
-- Implements a complete end-to-end ETL workflow
-- Supports scalable expansion for additional cities and data sources
+- Multi-source data extraction using APIs and datasets  
+- Data cleaning and transformation using Python (Pandas)  
+- Relational database design with MySQL  
+- Foreign key relationships for data integrity  
+- End-to-end ETL pipeline implementation  
+- Scalable structure for additional data sources  
 
 ---
 
@@ -129,22 +158,28 @@ multi-source-etl-pipeline-for-gans/
 
 ---
 
+## 🗄️ Database Design
+
+The project uses a **normalized relational schema** to ensure structured and consistent data storage.
+
+### Main Tables (in order of data flow)
+
+- cities  
+- population  
+- weather  
+- airports  
+- cities_airports  
+- flights  
+
+These tables are connected using **primary and foreign key relationships**.
+
+---
+
 ## 📈 Database Schema
 
 The following diagram illustrates the relational database design used in this project.
 
 ![Database Schema](screenshot/database.png)
-
-### Main Tables (in order of data flow)
-
-- city
-- population
-- weather
-- airport
-- cities_airport
-- flight
-
-These tables are connected using relational keys to ensure proper data integration and efficient querying across different datasets.
 
 ---
 
@@ -152,6 +187,7 @@ These tables are connected using relational keys to ensure proper data integrati
 
 ### 🗄️ SQL Script
 - [Database Schema (SQL)](https://github.com/keertikamanikandan/multi-source-etl-pipeline-for-gans/blob/main/SQL/Cities_db.sql)
+  
 ### 📓 Jupyter Notebook
 - [ETL Pipeline Notebook](https://github.com/keertikamanikandan/multi-source-etl-pipeline-for-gans/blob/main/jupyter%20notebook/gans_final.ipynb)
 
@@ -160,15 +196,15 @@ These tables are connected using relational keys to ensure proper data integrati
 
 ## 🔗 How to Use This Project
 
-### 1. Clone the Repository
+### 1. Clone Repository
 
 ```bash
 git clone https://github.com/your-username/multi-source-etl-pipeline-for-gans.git
 ```
 
-### 2. Create the Database
+### 2. Create Database
 
-Run the SQL script:
+Run the SQL script in MySQL:
 
 ```text
 SQL/Cities_db.sql
@@ -176,7 +212,7 @@ SQL/Cities_db.sql
 
 This will create all required tables in MySQL.
 
-### 3. Run the ETL Pipeline
+### 3. Run ETL Pipeline
 
 Open the Jupyter Notebook:
 
@@ -198,11 +234,10 @@ Before running the notebook, ensure you add your API keys for:
 
 ## 🚀 Future Improvements
 
-- Automate pipeline execution using scheduling tools
-- Deploy the ETL pipeline to a cloud platform
-- Containerize the application using Docker
-- Add data validation and error handling
-- Extend support for additional cities and datasets
+- Automate the ETL pipeline using scheduling tools  
+- Improve data validation and error handling for API data  
+- Optimize database performance using indexing and query tuning  
+- Extend the pipeline with additional cities and data sources  
 
 ---
 ## 🎯 Conclusion
