@@ -31,17 +31,15 @@ This project solves the problem:
 ## ⚙️ ETL Pipeline Architecture
 
 ```
-External Data APIs / Datasets
-        ↓
-Python (ETL Extraction)
-        ↓
-Data Cleaning & Transformation (Pandas)
-        ↓
-Relational Mapping (Foreign Keys)
-        ↓
-MySQL Database
-        ↓
-Analytics / Reporting Ready Data
+Data Sources (APIs + Wikipedia + Internal Data)
+                  ↓
+        Extract (Python scripts)
+                  ↓
+  Transform (Pandas cleaning & processing)
+                  ↓
+    Load (MySQL relational database)
+                  ↓
+     Analytics / Query-ready data
 ```
 ---
 
