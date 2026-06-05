@@ -126,10 +126,10 @@ These tables are connected using relational keys to ensure proper data integrati
 ## 🔗 Project Files
 
 ### 🗄️ SQL Script
-- [Database Schema (SQL)](https://github.com/keertikamanikandan/multi-source-etl-pipeline-for-gans/blob/main/jupyter%20notebook/gans_final.ipynb)
-
+- [Database Schema (SQL)]
 ### 📓 Jupyter Notebook
-- [ETL Pipeline Notebook](gans_final.ipynb)
+- [ETL Pipeline Notebook](https://github.com/keertikamanikandan/multi-source-etl-pipeline-for-gans/blob/main/jupyter%20notebook/gans_final.ipynb)
+
 
 ---
 
