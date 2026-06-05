@@ -12,22 +12,16 @@ The pipeline collects data from cities, population statistics, weather APIs, air
 
 This pipeline integrates multiple datasets to build a unified city-level database.
 
----
-
 ### 🏙️ City Data
 - Source: Internal dataset
 - Data Collected:
   - City names
   - Basic city metadata
 
----
-
 ### 👥 Population Data
 - Source: Wikipedia
 - Data Collected:
   - City population statistics
-
----
 
 ### 🌤️ Weather Data
 - Source: OpenWeather API
@@ -37,8 +31,6 @@ This pipeline integrates multiple datasets to build a unified city-level databas
   - Humidity
   - Wind speed
 
----
-
 ### ✈️ Airport Data
 - Source: AeroDataBox API
 - Data Collected:
@@ -46,15 +38,11 @@ This pipeline integrates multiple datasets to build a unified city-level databas
   - Geographic coordinates
   - Location details
 
----
-
 ### 🔗 Airport-City Mapping (cities_airport)
 - Source: Derived dataset
 - Data Collected:
   - Relationship between cities and airports
   - Foreign key mapping for relational joins
-
----
 
 ### 🛫 Flight Data
 - Source: AeroDataBox API
