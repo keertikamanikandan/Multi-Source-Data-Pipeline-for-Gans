@@ -126,10 +126,10 @@ These tables are connected using relational keys to ensure proper data integrati
 ## 🔗 Project Files
 
 ### 🗄️ SQL Script
-- [Database Schema (SQL)](SQL/Cities_db.sql)
+- [Database Schema (SQL)](Cities_db.sql)
 
 ### 📓 Jupyter Notebook
-- [ETL Pipeline Notebook](jupyter_notebook/gans_final.ipynb)
+- [ETL Pipeline Notebook](gans_final.ipynb)
 
 ---
 
