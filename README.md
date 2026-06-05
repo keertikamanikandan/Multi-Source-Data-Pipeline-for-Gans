@@ -1,5 +1,13 @@
 # 🚀 Multi-Source ETL Pipeline for GANS
 
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![MySQL](https://img.shields.io/badge/MySQL-Database-blue)
+![ETL](https://img.shields.io/badge/ETL-Pipeline-orange)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)
+![Status](https://img.shields.io/badge/Project-Completed-green)
+
+---
+
 ## 🎯 Project Overview
 
 This project demonstrates a multi-source ETL (Extract, Transform, Load) pipeline that integrates data from various external sources into a centralized relational database.
